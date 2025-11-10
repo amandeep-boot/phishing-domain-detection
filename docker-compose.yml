@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  # FastAPI Backend
+  backend:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    container_name: phishing-detection-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/workspace
+      - ./models:/workspace/models
+      - ./phishing_domain.csv:/workspace/phishing_domain.csv
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DATABASE_URL=sqlite:///./phishing_detection.db
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    working_dir: /workspace
+    networks:
+      - phishing-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Frontend (if you have one)
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #   container_name: phishing-detection-frontend
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - backend
+  #   networks:
+  #     - phishing-network
+
+networks:
+  phishing-network:
+    driver: bridge
+
+volumes:
+  models:
+  database:
