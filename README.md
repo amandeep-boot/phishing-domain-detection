@@ -9,7 +9,7 @@
 **Advanced ML-powered API for detecting phishing domains with dual model support (Random Forest + Deep Learning), user authentication, and comprehensive history tracking.**
 
 > **CSE_proj_12** - AI/ML Phishing Domain Detection System  
-> Team: Akash Kumar (2230727), Aman Jadon (2230731), Amandeep (2230732)  
+> Team: Amandeep (2230732)  
 > Mentor: Dr. Rupam Bhagawati | Branch: 7 CSE AB
 
 ---
