@@ -10,25 +10,5 @@
       "src": "/(.*)",
       "dest": "app/main.py"
     }
-  ],
-  "functions": {
-    "app/main.py": {
-      "maxDuration": 10
-    }
-  },
-  "excludeFiles": [
-    "models/**",
-    "scripts/**",
-    "*.db",
-    "*.csv",
-    ".venv/**",
-    "__pycache__/**",
-    "*.md",
-    ".git/**",
-    ".devcontainer/**",
-    "docker-compose.yml",
-    "Dockerfile",
-    "*.sh",
-    "*.bat"
   ]
 }
