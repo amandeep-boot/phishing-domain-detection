@@ -740,20 +740,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 👥 Team
-
-**CSE_proj_12 - AI/ML Phishing Domain Detection System**
-
-- **Akash Kumar** (2230727)
-- **Aman Jadon** (2230731)
-- **Amandeep** (2230732)
-
-**Mentor:** Dr. Rupam Bhagawati  
-**Branch:** 7 CSE AB  
-**Institution:** [Your Institution Name]
-
----
-
 ## 🙏 Acknowledgments
 
 - **Dataset:** GregaVrbancic et al. - [Phishing Websites Dataset](https://github.com/GregaVrbancic/Phishing-Dataset)
@@ -794,7 +780,5 @@ For questions or issues:
 <div align="center">
 
 **⭐ Star this repo if you find it helpful!**
-
-Made with ❤️ by CSE_proj_12 Team
 
 </div>
